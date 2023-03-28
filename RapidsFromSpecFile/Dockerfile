@@ -31,4 +31,3 @@ RUN /databricks/conda/envs/rapids/bin/python3 -c "import nltk; nltk.download(['p
 ENV MLFLOW_TRACKING_URI=databricks
 ENV DEFAULT_DATABRICKS_ROOT_CONDA_ENV=rapids
 ENV PYSPARK_PYTHON=/databricks/conda/envs/rapids/bin/python3
-ENV LD_LIBRARY_PATH=/usr/local/cuda-11.0/compat
