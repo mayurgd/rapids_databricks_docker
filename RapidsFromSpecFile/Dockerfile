@@ -3,7 +3,7 @@
 FROM databricksruntime/gpu-conda:cuda11
 
 # Copy rapids specifications file into temp location
-COPY rapids-spec_v23.02.txt /tmp/spec.txt
+COPY rapids-spec_v23.02_cuda11.2_py3.8.txt /tmp/spec.txt
 
 # Create a conda env "rapids" using the spec file and remove it after done
 RUN conda create --name rapids --file /tmp/spec.txt && \
